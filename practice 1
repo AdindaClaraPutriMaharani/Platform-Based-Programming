@@ -1,0 +1,35 @@
+// var
+function example() { 
+    var x = 20;
+    var x = 20;
+    if (true) {
+        var y = 40;
+    }
+    console.log(x); // 20
+    console.log(y); // 40
+}
+
+
+// let
+function example() {
+    let x = 20;
+    if (true) {
+        let y = 40;
+    }
+    console.log(x); // 20
+    console.log(y); // ReferenceError : y is not defined
+}
+
+// const
+function example() {
+    const x = 20;
+    if (true) {
+        const y = 40;
+    }
+    console.log(x); // 20
+    console.log(y); // ReferenceError: y is not defined
+}
+
+// try to change the value of const:
+const z = 5;
+z = 7; // ReferenceError: Assignment to constant variable
